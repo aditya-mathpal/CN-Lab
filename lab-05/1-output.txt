@@ -1,0 +1,28 @@
+Script started on 2025-08-31 05:16:18+14:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="53" LINES="10"]
+[?2004hlab-05$ ./1s.out
+[?2004lServer waiting for connection...
+Message from client: hi hi this is a test test
+Number of duplicate words removed: 2
+Processed sentence: hi this is a test
+Message from client: Stop
+Client requested to stop. Closing connection.
+Client disconnected.
+Server waiting for connection...
+^C
+[?2004hlab-05$ [?2004l
+exit
+
+Script done on 2025-08-31 05:16:53+14:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-08-31 05:16:24+14:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="53" LINES="10"]
+[?2004hlab-05$ ./1s.[K[Kc.out
+[?2004lConnected to server. Enter sentences (type 'Stop' to quit):
+
+Enter sentence: hi hi this is a test test
+Processed sentence from server: hi this is a test
+
+Enter sentence: Stop
+Stopping client...
+[?2004hlab-05$ [?2004l
+exit
+
+Script done on 2025-08-31 05:16:54+14:00 [COMMAND_EXIT_CODE="0"]

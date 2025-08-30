@@ -14,7 +14,6 @@ int main() {
     socklen_t len;
     char buf[256], sendBuf[256];
     
-    // Create UDP socket
     sockfd = socket(AF_INET, SOCK_DGRAM, 0);
     
     seraddr.sin_family = AF_INET;
@@ -22,31 +21,17 @@ int main() {
     seraddr.sin_port = htons(PORTNO);
     len = sizeof(seraddr);
     
-    printf("UDP Client - Matrix Row Sender\n");
-    
-    // Get matrix dimensions
-    printf("Enter number of rows: ");
+    printf("number of rows: ");
     scanf("%d", &rows);
-    printf("Enter number of columns: ");
+    printf("number of columns: ");
     scanf("%d", &cols);
     
-    // Send dimensions to server
     sprintf(sendBuf, "DIMENSIONS %d %d", rows, cols);
     sendto(sockfd, sendBuf, strlen(sendBuf), 0,
            (struct sockaddr *)&seraddr, len);
     
-    // Wait for server acknowledgment
-    memset(buf, 0, sizeof(buf));
-    n = recvfrom(sockfd, buf, sizeof(buf), 0,
-                 (struct sockaddr *)&seraddr, &len);
-    if(n > 0) {
-        buf[n] = '\0';
-        printf("Server response: %s\n", buf);
-    }
-    
-    // Send each row
     for(int i = 0; i < rows; i++) {
-        printf("\nEnter row %d (%d elements): ", i+1, cols);
+        printf("Enter row %d: ", i+1);
         strcpy(sendBuf, "ROW ");
         
         for(int j = 0; j < cols; j++) {
@@ -57,43 +42,18 @@ int main() {
             strcat(sendBuf, temp);
         }
         
-        // Send row to server
         sendto(sockfd, sendBuf, strlen(sendBuf), 0,
                (struct sockaddr *)&seraddr, len);
-        
-        // Wait for acknowledgment
-        memset(buf, 0, sizeof(buf));
-        n = recvfrom(sockfd, buf, sizeof(buf), 0,
-                     (struct sockaddr *)&seraddr, &len);
-        if(n > 0) {
-            buf[n] = '\0';
-            printf("Server response: %s\n", buf);
-        }
     }
     
-    // Receive complete matrix from server
-    printf("\nWaiting for complete matrix from server...\n");
     memset(buf, 0, sizeof(buf));
     n = recvfrom(sockfd, buf, sizeof(buf), 0,
                  (struct sockaddr *)&seraddr, &len);
-    if(n > 0) {
-        buf[n] = '\0';
-        printf("Complete matrix from server:\n%s\n", buf);
-    }
+    if(n > 0) buf[n] = 0;
     
-    // Send stop signal
     strcpy(sendBuf, "STOP");
     sendto(sockfd, sendBuf, strlen(sendBuf), 0,
            (struct sockaddr *)&seraddr, len);
-    
-    // Wait for goodbye message
-    memset(buf, 0, sizeof(buf));
-    n = recvfrom(sockfd, buf, sizeof(buf), 0,
-                 (struct sockaddr *)&seraddr, &len);
-    if(n > 0) {
-        buf[n] = '\0';
-        printf("Server response: %s\n", buf);
-    }
     
     close(sockfd);
     return 0;
