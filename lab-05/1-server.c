@@ -1,3 +1,7 @@
+/*
+1. TCP client-server program to remove duplicate words
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

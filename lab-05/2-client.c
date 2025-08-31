@@ -1,3 +1,7 @@
+/*
+2. UDP client-server program to send rows to make matrix
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
