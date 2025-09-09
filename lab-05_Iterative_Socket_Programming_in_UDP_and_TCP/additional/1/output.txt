@@ -1,0 +1,19 @@
+Script started on 2025-09-09 11:28:13+05:30 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="104" LINES="19"]
+[?2004h]0;5CSEC2@selab-05: ~/Desktop/230905232/CN-Lab/lab-05/additional/1[01;32m5CSEC2@selab-05[00m:[01;34m~/Desktop/230905232/CN-Lab/lab-05/additional/1[00m$ ./s.out 
+[?2004lServer started...
+Encrypted message received: lm, xlmw mw e xiwx
+Decrypted message: hi, this is a test
+[?2004h]0;5CSEC2@selab-05: ~/Desktop/230905232/CN-Lab/lab-05/additional/1[01;32m5CSEC2@selab-05[00m:[01;34m~/Desktop/230905232/CN-Lab/lab-05/additional/1[00m$ [?2004l
+exit
+
+Script done on 2025-09-09 11:28:33+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-09-09 11:28:16+05:30 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="19"]
+[?2004h]0;5CSEC2@selab-05: ~/Desktop/230905232/CN-Lab/lab-05/additional/1[01;32m5CSEC2@selab-05[00m:[01;34m~/Desktop/230905232/CN-Lab/lab-05/additional/1[00m$ ./c.out 
+[?2004lEnter a message to encrypt and send: hi, this is a test
+Server response:
+Encrypted: lm, xlmw mw e xiwx
+Decrypted: hi, this is a test
+[?2004h]0;5CSEC2@selab-05: ~/Desktop/230905232/CN-Lab/lab-05/additional/1[01;32m5CSEC2@selab-05[00m:[01;34m~/Desktop/230905232/CN-Lab/lab-05/additional/1[00m$ [?2004l
+exit
+
+Script done on 2025-09-09 11:28:33+05:30 [COMMAND_EXIT_CODE="0"]

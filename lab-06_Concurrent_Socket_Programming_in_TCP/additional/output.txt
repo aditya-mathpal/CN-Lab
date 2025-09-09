@@ -1,0 +1,17 @@
+Script started on 2025-09-09 12:03:21+05:30 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="104" LINES="19"]
+[?2004h]0;5CSEC2@selab-05: ~/Desktop/230905232/CN-Lab/lab-06_Concurrent_Socket_Programming_in_TCP/additional[01;32m5CSEC2@selab-05[00m:[01;34m~/Desktop/230905232/CN-Lab/lab-06_Concurrent_Socket_Programming_in_TCP/additional[00m$ ./c.out 
+[?2004lServer Response:
+Date and Time: 2025-09-09 12:03:27
+Process ID: 136072
+[?2004h]0;5CSEC2@selab-05: ~/Desktop/230905232/CN-Lab/lab-06_Concurrent_Socket_Programming_in_TCP/additional[01;32m5CSEC2@selab-05[00m:[01;34m~/Desktop/230905232/CN-Lab/lab-06_Concurrent_Socket_Programming_in_TCP/additional[00m$ [?2004l
+exit
+
+Script done on 2025-09-09 12:03:30+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-09-09 12:03:17+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="19"]
+[?2004h]0;5CSEC2@selab-05: ~/Desktop/230905232/CN-Lab/lab-06_Concurrent_Socket_Programming_in_TCP/additional[01;32m5CSEC2@selab-05[00m:[01;34m~/Desktop/230905232/CN-Lab/lab-06_Concurrent_Socket_Programming_in_TCP/additional[00m$ ./se[K.out 
+[?2004lServer started...
+^C
+[?2004h]0;5CSEC2@selab-05: ~/Desktop/230905232/CN-Lab/lab-06_Concurrent_Socket_Programming_in_TCP/additional[01;32m5CSEC2@selab-05[00m:[01;34m~/Desktop/230905232/CN-Lab/lab-06_Concurrent_Socket_Programming_in_TCP/additional[00m$ [?2004l
+exit
+
+Script done on 2025-09-09 12:03:31+05:30 [COMMAND_EXIT_CODE="130"]
